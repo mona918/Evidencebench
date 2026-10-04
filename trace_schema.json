@@ -1,0 +1,66 @@
+{
+  "project": "EvidenceBench",
+  "trace_version": "1.0",
+  "trace": {
+    "trace_id": "unique-request-id",
+    "timestamp": "ISO-8601 timestamp",
+    "question": "user question",
+
+    "ingestion": {
+      "document_name": "document.pdf",
+      "document_hash": "sha256-hash",
+      "version": 1,
+      "pages": 1,
+      "chunks_created": 1
+    },
+
+    "retrieval": {
+      "strategy": "hybrid",
+      "dense_candidates": [],
+      "keyword_candidates": [],
+      "fusion_method": "weighted-score-fusion",
+      "candidate_count": 20
+    },
+
+    "reranking": {
+      "enabled": true,
+      "model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+      "scores": []
+    },
+
+    "evidence": [
+      {
+        "document": "document.pdf",
+        "page": 1,
+        "chunk_id": "chunk-id",
+        "retrieval_score": 0.0,
+        "reranker_score": 0.0
+      }
+    ],
+
+    "generation": {
+      "model": "LLM model",
+      "answer": "generated answer",
+      "grounded": true
+    },
+
+    "citations": [
+      {
+        "document": "document.pdf",
+        "page": 1
+      }
+    ],
+
+    "abstention": {
+      "triggered": false,
+      "reason": ""
+    },
+
+    "performance": {
+      "retrieval_latency_ms": 0,
+      "reranking_latency_ms": 0,
+      "generation_latency_ms": 0,
+      "total_latency_ms": 0
+    }
+  }
+}

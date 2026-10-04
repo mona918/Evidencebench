@@ -1,0 +1,46 @@
+id,type,question,expected_answer,expected_citation,should_abstain
+Q01,direct,"What is the deadline for submitting a course-change request in the latest document?","20 Oct","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q02,direct,"Where should students submit a course-change request?","Through the academic portal","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q03,direct,"What information must be included in a course-change request?","Registration number, current course, requested course, and brief reason","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q04,paraphrased,"By what date does a student need to apply for changing a course?","20 Oct","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q05,paraphrased,"How can a student request a change of course?","Through the academic portal","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q06,paraphrased,"Which details are required when requesting a course change?","Registration number, current course, requested course, and brief reason","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q07,direct,"What is the document called?","Important Dates — Updated Version","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q08,direct,"Is a brief reason required for a course-change request?","Yes","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q09,paraphrased,"Does the request need the student's registration number?","Yes","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q10,paraphrased,"Does the request specify both the existing and desired course?","Yes","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q11,direct,"What is the current course-change deadline?","20 Oct","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q12,paraphrased,"When is the final date mentioned for course changes?","20 Oct","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q13,direct,"What portal is used for the request?","Academic portal","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q14,direct,"What should a student provide as the reason for changing a course?","A brief reason","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q15,paraphrased,"Which identification information is needed in the request?","Registration number","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q16,multi_document,"How did the course-change deadline change between the original and updated document?","It changed from 15 Oct to 20 Oct","EvidenceBench_Test_Document.pdf + EvidenceBench_Test_Document_V2.pdf",false
+Q17,multi_document,"What information stayed the same between the two document versions?","The submission method and required request information remained the same","EvidenceBench_Test_Document.pdf + EvidenceBench_Test_Document_V2.pdf",false
+Q18,conflicting,"Which deadline should be treated as the latest deadline: 15 Oct or 20 Oct?","20 Oct is the latest version's deadline","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q19,conflicting,"Why might two different course-change deadlines appear?","The documents represent different versions","EvidenceBench_Test_Document.pdf + EvidenceBench_Test_Document_V2.pdf",false
+Q20,unclear,"What is the deadline?","The question is ambiguous without specifying which document version","",true
+Q21,unclear,"What is the most important date?","Insufficient context to determine this","",true
+Q22,abstention,"What is the population of Mars?","No supporting evidence in the uploaded documents","",true
+Q23,abstention,"Who is the President of the United States according to this document?","No supporting evidence in the uploaded documents","",true
+Q24,abstention,"What is the weather today?","No supporting evidence in the uploaded documents","",true
+Q25,abstention,"What is the tuition fee mentioned in the document?","No supporting evidence in the uploaded documents","",true
+Q26,abstention,"What is the examination date?","No supporting evidence in the uploaded documents","",true
+Q27,direct,"Does the request have to be submitted before the deadline?","Yes","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q28,paraphrased,"Is there a deadline associated with changing courses?","Yes, 20 Oct","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q29,direct,"Is the requested course part of the required information?","Yes","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q30,direct,"Is the current course part of the required information?","Yes","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q31,direct,"Is the registration number required?","Yes","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q32,direct,"Is a reason required?","Yes, a brief reason","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q33,paraphrased,"Where does the student initiate the course-change process?","Academic portal","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q34,paraphrased,"What deadline is given in the updated version?","20 Oct","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q35,direct,"Does the latest document contain the word 'Updated'?","Yes","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q36,multi_document,"Which version has the later deadline?","Version 2","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q37,multi_document,"What was the original deadline?","15 Oct","EvidenceBench_Test_Document.pdf - Page 1",false
+Q38,multi_document,"What is the updated deadline?","20 Oct","EvidenceBench_Test_Document_V2.pdf - Page 1",false
+Q39,conflicting,"If one document says 15 Oct and another says 20 Oct, should the system blindly give both as the answer?","No; it should identify the conflict/version and use the latest version when appropriate","EvidenceBench_Test_Document.pdf + EvidenceBench_Test_Document_V2.pdf",false
+Q40,abstention,"What is the capital of France according to the uploaded handbook?","No supporting evidence in the uploaded documents","",true
+Q41,abstention,"What programming language was used to create this document?","No supporting evidence in the uploaded documents","",true
+Q42,abstention,"How many students are enrolled at the institute?","No supporting evidence in the uploaded documents","",true
+Q43,abstention,"What is the institute's annual budget?","No supporting evidence in the uploaded documents","",true
+Q44,abstention,"What courses are offered by the institute?","No supporting evidence in the uploaded documents","",true
+Q45,abstention,"What is the institute's admission cutoff?","No supporting evidence in the uploaded documents","",true
